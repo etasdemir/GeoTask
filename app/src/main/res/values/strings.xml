@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">GeoTask</string>
+    <string name="cancel">Cancel</string>
+    <string name="open_settings">Open Settings</string>
+
+<!--  MapFragment  -->
+    <string name="location_snack_bar">In order to draw route, GeoTask needs your location.
+        Please select \"allow all the time\" in settings screen.</string>
+    <string name="map_request_gps">Turn on your device\'s location feature to continue.</string>
+    <string name="new_marker_title">New Task</string>
+    <string name="new_marker_snippet">Click and drag to location</string>
+    <string name="map_show_details">Detail</string>
+    <string name="map_show_location">Show Location</string>
+    <string name="map_create_route">Create Route</string>
+
+<!--  Save Location fragment  -->
+    <string name="location_title">Title</string>
+    <string name="location_desc">Description</string>
+    <string name="location_submit">Submit</string>
+    <string name="location_lat">Latitude: %1$f</string>
+    <string name="location_long">Longitude: %1$f</string>
+    <string name="location_date">Date: %1$s</string>
+
+<!--  Error  -->
+    <string name="error">Error: %1$s</string>
+    <string name="no_internet">GeoTask needs internet connection for drawing routes. Please check your internet status and try again.</string>
+
+    <string name="delete_place">Delete Location</string>
+    <string name="delete_all_place">Delete All Locations</string>
+</resources>

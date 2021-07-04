@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/geoMapFragment">
+
+    <fragment
+        android:id="@+id/geoMapFragment"
+        android:name="com.elacqua.geotask.ui.map.GeoMapFragment"
+        android:label="map_fragment"
+        tools:layout="@layout/fragment_geomap" >
+        <action
+            android:id="@+id/action_geoMapFragment_to_saveLocationFragment"
+            app:destination="@id/saveLocationFragment" />
+        <action
+            android:id="@+id/action_geoMapFragment_to_savedPlaceFragment"
+            app:destination="@id/savedPlaceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/saveLocationFragment"
+        android:name="com.elacqua.geotask.ui.savelocation.SaveLocationFragment"
+        android:label="save_location_fragment"
+        tools:layout="@layout/save_location_fragment" />
+    <fragment
+        android:id="@+id/savedPlaceFragment"
+        android:name="com.elacqua.geotask.ui.savedplace.SavedPlaceFragment"
+        android:label="saved_place_fragment"
+        tools:layout="@layout/saved_place_fragment" />
+</navigation>

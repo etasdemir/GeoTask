@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="extra_large_margin">48dp</dimen>
+    <dimen name="large_margin">24dp</dimen>
+    <dimen name="medium_margin">16dp</dimen>
+    <dimen name="small_marg">8dp</dimen>
+
+    <dimen name="map_tasks_width">200dp</dimen>
+</resources>

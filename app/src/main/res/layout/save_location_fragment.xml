@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="presenter"
+            type="com.elacqua.geotask.ui.savelocation.SaveLocationFragment" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5"
+        tools:context=".ui.savelocation.SaveLocationFragment">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:layout_margin="50dp"
+            app:cardCornerRadius="@dimen/large_margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".ui.savelocation.SaveLocationFragment">
+
+                <TextView
+                    android:id="@+id/txt_save_loc_title_static"
+                    style="@style/mini_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/large_margin"
+                    android:layout_marginTop="@dimen/large_margin"
+                    android:text="@string/location_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/txt_save_loc_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_marg"
+                    android:layout_marginEnd="@dimen/medium_margin"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:inputType="text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/txt_save_loc_title_static"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_save_loc_title_static" />
+
+                <TextView
+                    android:id="@+id/txt_save_loc_desc_static"
+                    style="@style/mini_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_margin"
+                    android:text="@string/location_desc"
+                    app:layout_constraintStart_toStartOf="@+id/txt_save_loc_title"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_save_loc_title" />
+
+                <EditText
+                    android:id="@+id/txt_save_loc_desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_marg"
+                    android:layout_marginEnd="@dimen/medium_margin"
+                    android:ems="10"
+                    android:inputType="text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/txt_save_loc_desc_static"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_save_loc_desc_static" />
+
+                <Button
+                    android:id="@+id/btn_save_loc_submit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/medium_margin"
+                    android:layout_marginBottom="@dimen/extra_large_margin"
+                    android:onClick="@{() -> presenter.onSubmitButtonClicked()}"
+                    android:text="@string/location_submit"
+                    style="@style/ButtonUIStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_save_loc_lat"
+                    style="@style/mini_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_margin"
+                    app:layout_constraintStart_toStartOf="@+id/txt_save_loc_desc"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_save_loc_desc"
+                    tools:text="Lat: " />
+
+                <TextView
+                    android:id="@+id/txt_save_loc_long"
+                    style="@style/mini_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_margin"
+                    app:layout_constraintStart_toStartOf="@+id/txt_save_loc_lat"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_save_loc_lat"
+                    tools:text="Long: " />
+
+                <TextView
+                    android:id="@+id/txt_save_loc_date"
+                    style="@style/mini_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_margin"
+                    app:layout_constraintStart_toStartOf="@+id/txt_save_loc_long"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_save_loc_long"
+                    tools:text="Date" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
