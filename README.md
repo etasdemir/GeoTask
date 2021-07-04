@@ -16,19 +16,28 @@ Eğer konum göstermez, konuma gidemez ya da rota çizemezse uygulamanın izinle
 (P40 ve Samsung A70 ile test edilebilir)
 Uygulama içi ekran görüntüleri, kaynak kod klasörünün en dış dizininde screenshots klasöründe bulunmaktadır.
 
-Proje zip dosyasından çıkarılarılıp, Android Studio'da açılarak, çalıştırılabilir. Uygulama geliştirilirken MVVM mimari tasarımı izlenmiştir.
+Proje zip dosyasından çıkarılıp, Android Studio'da açılarak, çalıştırılabilir. Uygulama geliştirilirken MVVM mimari tasarımı izlenmiştir.
 
 Kütüphaneler:
 
 Not: İstenen konumlardan geçen rotanın alınması için OpenRouteService API kullanılmıştır.
 
 HMS Map Kit (5.3.0.300): Harita çizilmesi ve harita işlevleri için kullanılmaktadır.
+
 HMS Location Kit (5.1.0.303): Konum bilgisinin alınması için kullanılmaktadır.
+
 Timber 4.7.1: Loglama işlemleri için kullanılmaktadır.
+
 Room 2.3.0: Cihaz veritabanı işlemleri için kullanılmaktadır.
+
 Retrofit 2.9.0: OpenRouteService API'ndan rotanın alınması için kullanılmaktadır.
+
 Gson 2.8.6: JSON converter olarak kullanılmaktadır.
+
 Coroutine 1.4.1: Asenkron işlemler için kullanılmaktadır.
+
 ViewModel 2.2.0: MVVM patternin bir parçası olarak ve state durumlarını korumak için kullanılmaktadır.
+
 Navigation 2.3.5: Uygulama single Activity multiple Fragment mantığı üzerine dayalı olduğundan dolayı Fragment geçişleri için kullanılmaktadır.
+
 LiveData 2.2.0: Asenkron işlemlerin sonucunu dinlemek için kullanılmaktadır.
